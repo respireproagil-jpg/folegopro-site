@@ -39,6 +39,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .marca img { width: 36px; height: 36px; border-radius: 9px; }
 .marca b { color: var(--ouro-deep); }
 .topo small { font-size: .78rem; color: var(--muted); font-weight: 600; }
+@media (max-width: 480px) { .topo small { display: none; } .marca { font-size: 1.15rem; } }
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 58px; padding: 10px 26px; border-radius: 18px; background: var(--ouro); color: var(--ouro-ink); font-family: var(--display); font-weight: 800; font-size: 1.25rem; text-decoration: none; box-shadow: 0 5px 0 var(--ouro-deep); transition: transform .08s, box-shadow .08s; }
 .btn:active { transform: translateY(3px); box-shadow: 0 2px 0 var(--ouro-deep); }
 .btn:focus-visible, a:focus-visible { outline: 3px solid var(--azul); outline-offset: 3px; }
